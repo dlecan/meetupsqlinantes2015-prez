@@ -35,6 +35,7 @@
       .remark-slide-content li {
         margin-top: 0.4em;
         margin-bottom: 0.5em;
+        font-size: 50px;
       }
 
       .remark-slide-content a, #slide-menu a {
@@ -60,7 +61,8 @@
       }
 
       .red    { color: #FF4943; }
-      .gray   { color: #787878; }
+      .dark-gray   { color: #787878; }
+      .gray   { color: #ADADAD; }
       .green  { color: #8ABA3D; }
       .blue   { color: #15aaff; }
       .yellow { color: #F7F41E; }
@@ -187,7 +189,7 @@
   <body>
     <textarea id="source">
 
-class: center, middle, black
+class: center, middle, white, bg-black
 
 # .title[Dérouillez-vous les méninges avec <br/> .blue[Go] &amp; .orange[Rust]]
 
@@ -201,11 +203,11 @@ Par
 
 # Damien Lecan
 
-Développeur @.red[[SQLI](http://www.sqli.com)]
+<i class="fa fa-heart red fa-lg fa-fw"></i>Open Source - Web
 
 &nbsp;
 
-<i class="fa fa-heart red fa-lg fa-fw"></i>Open Source - Web
+Développeur @.red[[SQLI](http://www.sqli.com)]
 
 ---
 name:pourquoi-cette-prez
@@ -231,8 +233,7 @@ class: middle, bg-black, white
 
 --
 
-- Go
-- Rust
+- Go &amp; Rust
 
 ---
 class:middle, bg-black, white
@@ -257,7 +258,7 @@ class: center, middle
 
 ![Go](resources/640px-Golang.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Rust](resources/Rust_programming_language_black_logo.svg)
 
-## Essayez-les !
+## Essayons-les !
 
 ---
 background-image: url("resources/github-classement-langages.png")
@@ -294,10 +295,54 @@ class: middle, center
 ![:scale 45%](resources/wikipedia-rust.png)
 
 ---
-# Carac plateformes
+class:center, middle
+
+# Plateformes
 
 ---
-# Carac langages
+# Plateformes
+
+- Packaging / dépendances de sources
+  - `go get`
+  - `cargo`
+
+---
+# Plateformes
+
+- Documentation centralisée
+  - `go doc` et Go dashboard
+  - `rustdoc` / `cargo doc`
+
+---
+# Plateformes
+
+- Integration continue fournie par la communauté : Travis
+
+--
+
+- Publication centralisée
+  - Rust : [Crates.io](crates.io)
+
+---
+# Plateformes
+
+- Tests
+
+--
+
+- Cross-plateformes, oui, <br/>mais cross-compilation ?
+
+--
+
+- Conventions
+
+---
+class:center, middle
+
+# Langages
+
+---
+# Langages
 
 ---
 name: conclusion
@@ -307,15 +352,17 @@ class: bg-black, white, center, middle
 
 --
 
-## <em>Bankable</em>
+## Des plateformes à fort potentiel
 
 --
 
-## <em>Sexy</em>
+## Si vous voulez
+- Apprendre
+- Etre <em>bankable</em>
 
 --
 
-## Essayez-les !
+# .red[Essayez-les !]
 
 ---
 class: bg-black, center, white, middle
