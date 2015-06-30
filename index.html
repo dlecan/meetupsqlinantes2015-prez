@@ -176,6 +176,17 @@
         border: 2px solid black;
       }
 
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); }
+        100% { transform: scale(1); }
+      }
+      .pulse {
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+      }
+
 
     </style>
   </head>
@@ -186,7 +197,7 @@ class: center, middle, white, bg-black
 
 # .title[Dérouillez-vous les méninges avec <br/> .blue[Go] &amp; .orange[Rust]]
 
-.gray.large[<i class="fa fa-twitter fa-fw"></i>[@dlecan](https://twitter.com/dlecan) - #meetup]
+.gray.large[<i class="fa fa-twitter fa-fw"></i>[@dlecan](https://twitter.com/dlecan) - #meetupsqli]
 
 ---
 
@@ -224,34 +235,20 @@ class: middle, bg-black, white
 
 - Javascript (sérieusement)
 
---
-
-- Go &amp; Rust
-
 ---
-class:middle, bg-black, white
-#Pourquoi apprendre... ?
+class: bg-black, center, middle, yellow
 
-- Progresser
-- S'ouvrir l'esprit
-- Etre <em>bankable</em>
+![Bankable](resources/chien-cigare.jpg)
 
----
-class:middle, bg-black, white 
-#...De nouveaux langages ?
-
-- Plus de productivité
-- Plus de performances
-- Plus de qualité
-- ...
+.pulse[
+# BANKABLE
+]
 
 ---
 class: center, middle
-# Pourquoi .blue[Go] &amp; .orange[Rust] ?
+# .blue[Go] &amp; .orange[Rust] ?
 
 ![Go](resources/640px-Golang.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Rust](resources/Rust_programming_language_black_logo.svg)
-
-## Essayons-les !
 
 ---
 background-image: url("resources/github-classement-langages.png")
@@ -285,41 +282,28 @@ class:center, middle
 # Plateformes
 
 ---
-# Plateformes
-
 - Packaging / dépendances de sources
   - `go get`
   - `cargo`
 
----
-# Plateformes
+--
 
-- Documentation centralisée
-  - `go doc` et Go dashboard
+- Documentation (centralisée)
+  - `go doc`
   - `rustdoc` / `cargo doc`
 
 ---
-# Plateformes
-
-- Integration continue fournie par la communauté : Travis
+- Integration continue fournie par la communauté : [Travis-ci.org](http://travis-ci.org)
 
 --
 
 - Publication centralisée
+  - Go : non
   - Rust : [Crates.io](crates.io)
 
----
-# Plateformes
-
-- Tests
-
 --
 
-- Cross-plateformes, oui, <br/>mais cross-compilation ?
-
---
-
-- Conventions
+- Tests simples : oui !
 
 ---
 class:center, middle
@@ -334,25 +318,49 @@ class:center, middle
 # Langages
 
 ---
-name:caracteristiques
-class: middle, center
+# .blue[Go] &amp; .orange[Rust]
 
-![:scale 45%](resources/wikipedia-go.png)
-![:scale 45%](resources/wikipedia-rust.png)
+.large[
+.blue[Google 2009] &nbsp; &nbsp; .orange[Mozilla 2010]
+
+Compilé, concurrent, impératif, .orange[fonctionnel]
+
+Typage : statique, fort, inféré
+
+]
+
+---
+# .blue[Go] &amp; .orange[Rust]
+
+.large[
+Multiplateformes
+
+.blue[C, Python]
+
+.orange[C++, C#, Haskell, Ruby]
+
+]
+
+---
+class:center, middle
+
+--
+
+# .red[Essayez-les !]
 
 ---
 # .blue[Go]
 
-- Gestion mémoire simple car <em>gc</em>
-- Performant
-- Asynchrone mais patterns de codage
+- Pas de mémoire à gérer
+- Rapide
+- Asynchrone avec patterns de codage
 
 ---
 # .orange[Rust]
 
-- 
-- 
-- 
+- Sûr par défaut
+- Fonctionnel
+- Concurrence intégrée dans le langage
 
 ---
 class:center, middle
