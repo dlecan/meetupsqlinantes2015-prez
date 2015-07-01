@@ -6,7 +6,7 @@
     <link href="assets/font-awesome.min.css" rel="stylesheet">
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <style type="text/css">
-      @import url(//fonts.googleapis.com/css?family=Ubuntu+Mono|Yanone+Kaffeesatz);
+      /*@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono|Yanone+Kaffeesatz);*/
 
       body {
         font-family: 'Ubuntu', 'Calibri', sans-serif;
@@ -56,7 +56,7 @@
       }
 
       .dlecan { font-family: Yanone Kaffeesatz, Georgia, serif; }
-      .dlecan p { color: #a09583; font-size: 34px }
+      .dlecan p { color: #a09583; font-size: 55px }
       .dlecan h1 { font-family: Yanone Kaffeesatz, Georgia, serif; color: #fff; }
 
       .footnote {
@@ -122,6 +122,10 @@
         font-size: 300%;
       }
 
+      .small {
+        font-size: 50%;
+      }
+
       .title {
         font-size: 120%;
       }
@@ -178,8 +182,6 @@ Par
 # Damien Lecan
 
 <i class="fa fa-heart red fa-lg fa-fw"></i>Open Source - Web
-
-&nbsp;
 
 Développeur @.red[[SQLI](http://www.sqli.com)]
 
@@ -257,23 +259,19 @@ class:center, middle
   - `cargo`
 
 --
-
-- Documentation (centralisée)
-  - `go doc`
-  - `rustdoc` / `cargo doc`
-
----
 - Integration continue fournie par la communauté : [Travis-ci.org](http://travis-ci.org)
 
---
+---
 
 - Publication centralisée
   - Go : non
-  - Rust : [Crates.io](crates.io)
+  - Rust : [Crates.io](http://crates.io)
 
 --
 
-- Tests simples : oui !
+- Documentation
+  - `go doc`
+  - `rustdoc` / `cargo doc` .small[(centralisée)]
 
 ---
 class:center, middle
@@ -325,24 +323,12 @@ class: bg-blue, middle, center, white
 
 # .large[Pas de mémoire à gérer]
 
---
-
-.right[... grâce à un ramasse-miettes<br>
-(<em>gargabe collector</em>)]
-
 ---
 class: bg-orange, middle, center, white
 
 --
 
 # .large[Sûr par défaut]
-
----
-class:center, middle
-
---
-
-# Essayez .blue[Go] &amp; .orange[Rust] !
 
 ---
 name: conclusion
@@ -385,8 +371,7 @@ class: bg-black, center, white, middle
 
       var slideshow = remark.create({
         ratio: '16:9',
-        click: false,
-        countIncrementalSlides: false
+        countIncrementalSlides: true
       });
     </script>
 
